@@ -1,4 +1,14 @@
 function hasTargetSum(array, target) {
+  for (i=0; i<array.length; i++){
+    const compliment= target - array[i]
+  for(j=i+1; j<array.length; j++){
+    if (compliment===array[j])
+    {
+      return true
+    }
+  }
+}
+  return false;
   // Write your algorithm here
 }
 
